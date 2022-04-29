@@ -6,7 +6,7 @@
 
 COMMISION_RATE = 1.3 / 10000  # 佣金，双向收取
 STAMP_TAX = 1 / 1000  # 印花税，卖出收取
-TRANSFER_FEE = 0.2 / 10000  # 过户费，双向收取
+TRANSFER_FEE = 0.1 / 10000  # 过户费，双向收取
 COMMISION_THRESHOLD = 5 / COMMISION_RATE  # 佣金变化门槛  # 万 1.3 为 38461.5385
 
 SZ_COMMISION_RATE = 0.4 / 10000  # 深市可转债佣金
@@ -106,7 +106,7 @@ def convertible_bond(
 
 
 if __name__ == "__main__":
-    # stock(buying_price=2.93 ,nums=5000)
+    stock(buying_price=2.91, selling_price=2.92, nums=3000)
     # stock(buying_price=2.93 ,selling_price=2.9351,nums=5000)
 
     # stock(3.07,nums=3000)
@@ -115,4 +115,4 @@ if __name__ == "__main__":
     # stock(2.93,nums=1000)
 
     # stock(2.93, nums=5000,selling_price=2.94)
-    convertible_bond(buying_price=122, selling_price=123, nums=100, is_sz=False)
+    # convertible_bond(buying_price=122, selling_price=123, nums=100, is_sz=False)
