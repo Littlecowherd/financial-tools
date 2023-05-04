@@ -103,16 +103,10 @@ def convertible_bond(
                 selling_total = selling_actual / (1 - SH_COMMISION_RATE)
         print(f"卖出价格(保底)：{selling_total:.3f}")
         print(f"卖出单价(保底)：{selling_total/nums:.3f}")
+    print("-" * 10 + "计算结束" + "-" * 10 + "\n\n")
 
 
 if __name__ == "__main__":
-    stock(buying_price=2.91, selling_price=2.92, nums=3000)
-    # stock(buying_price=2.93 ,selling_price=2.9351,nums=5000)
-
-    # stock(3.07,nums=3000)
-    # stock(3.02,nums=700)
-    # stock(2.97,nums=1000)
-    # stock(2.93,nums=1000)
-
-    # stock(2.93, nums=5000,selling_price=2.94)
-    # convertible_bond(buying_price=122, selling_price=123, nums=100, is_sz=False)
+    stock(buying_price=3.07, selling_price=3.92, nums=3000)
+    stock(3.07, nums=3000)
+    convertible_bond(buying_price=122, selling_price=123, nums=100, is_sz=False)
